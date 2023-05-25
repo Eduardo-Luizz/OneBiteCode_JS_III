@@ -1,0 +1,10 @@
+
+-> npm init
+
+-> npm i --save lodash
+
+-> npm install --save-dev eslint
+
+-> npm install --global sass
+
+-> npm uninstall eslint
