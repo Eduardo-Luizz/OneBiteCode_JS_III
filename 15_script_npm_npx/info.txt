@@ -1,0 +1,10 @@
+Depois de instalar executar o comando no cmd
+npx hello-world-npm
+
+# Criando comando personalizado
+"scripts": {
+    "hello": "npx hello-world-npm"
+},
+
+# Executando comando personalizado
+npm run hello
