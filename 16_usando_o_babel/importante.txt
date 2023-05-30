@@ -1,0 +1,5 @@
+"babel": "babel src --out-dir dist --presets=@babel/preset-env"
+antes de criar o arquivo de configuração babel.config.js
+
+depois
+"babel": "babel src --out-dir dist"
