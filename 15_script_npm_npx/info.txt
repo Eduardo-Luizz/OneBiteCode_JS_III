@@ -8,3 +8,21 @@ npx hello-world-npm
 
 # Executando comando personalizado
 npm run hello
+
+
+// package.json
+
+// ...
+	"scripts": {
+    "hello": "hello-world-npm",
+    "start": "node index.js"
+  },
+// ...
+
+// index.js
+
+const hello = require('hello-world-npm')
+
+console.log(hello())
+
+npm start
