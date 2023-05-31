@@ -1,0 +1,2 @@
+Como eu expliquei anteriormente, os loaders permitem que nós transformemos os módulos, o que permite que o webpack também seja capaz de entender outros formatos de arquivo além do javascript e do JSON. Vamos instalar dois loaders que nos ajudarão a incluir arquivos CSS no webpack, o style-loader e o css-loader:
+npm install --save-dev style-loader css-loader
