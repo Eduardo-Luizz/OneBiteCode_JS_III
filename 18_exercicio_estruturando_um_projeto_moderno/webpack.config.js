@@ -1,25 +1,29 @@
+// webpack.config.js
+
 const path = require('path')
 
 module.exports = {
-    entry: './src/index.js',
-    output: {
-        filename: '[name].bundle.min.js',
-        path: path.resolve(__dirname, 'dist')
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist')
     },
-    mode: 'production',
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                },
-            },
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
-        ]
-    }
+    compress: true,
+    port: 8000
+  },
+  entry: {
+    index: './src/index.js'
+  },
+  mode: 'production',
+  module: {
+    rules: [{
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }, {
+      test: /.js$/,
+      use: ['babel-loader']
+    }]
+  },
+  output: {
+    filename: '[name].min.js'
+  }
 }
