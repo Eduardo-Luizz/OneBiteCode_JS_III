@@ -1,0 +1,22 @@
+{
+  "name": "18_exercicio_estruturando_um_projeto_moderno",
+  "version": "1.0.0",
+  "description": "Exercício utilizando webpack script e etc",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Eduardo Luiz Zanotto",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
